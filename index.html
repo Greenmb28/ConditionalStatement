@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let  firstNum = prompt("Please enter your first number!");
+        firstNum = parseInt(firstNum);
+        let opSign = prompt("Please enter the operater you need!")
+       
+        let secondNum = prompt("Please enter your last number!");
+        secondNum = parseInt(secondNum);
+        let aditNum = firstNum + secondNum;
+        aditNum = parseInt(aditNum);
+        let subtNum = firstNum - secondNum;
+        let diviNum = firstNum / secondNum;
+        let multiNum = firstNum * secondNum;
+
+        if (!(isNaN(firstNum + secondNum)))
+        {
+            
+        switch(opSign)
+        {
+            case "+":
+                
+                aditNum = firstNum + secondNum;
+                
+                console.log("Your answer is ",aditNum);
+                break;
+            case "-":
+                 subtNum = firstNum - secondNum;
+                console.log("Your answer is ",subtNum);
+                break;
+            case "/":
+                 diviNum = firstNum / secondNum;
+                console.log("Your answer is ",diviNum );
+                break;
+            case "*":
+                 multiNum = firstNum * secondNum;
+                console.log("Your answer is ", multiNum);
+                break;
+            default:
+                console.log("Please enter a valid number and operator! Try Again!")
+                break;
+
+
+        
+        }
+    }
+    
+        
+        
+        
+    </script>
+</body>
+</html>
